@@ -1,0 +1,14 @@
+inherit gnome2
+
+NAME="indicator-multiload"
+VERSION=0.4
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="Multiload indicator applet"
+DESCRIPTION="Reimplementation of the gnome-applets multiload applet in vala and
+for Canonicals appindicators."
+HOMEPAGE="https://launchpad.net/indicator-multiload"
+SRC_URI="${HOMEPAGE}/stable/${VERSION}/+download/${NAME}-${VERSION}.tar.gz"
+
+# this hasn't been updated in far too long
+CFLAGS+=" -Wno-error=deprecated-declarations"
